@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4 - HTML</title>
+</head>
+
+<body>
+    <section>
+        <p>
+            <a href="Home.html">Home |</a> 
+            <a href="Receita.html">Receita |</a>
+            <a href="Video.html">Video |</a>
+            <a href="Contato.html">Contato </a>
+        </p>
+    </section>
+    
+    <h1>Informações para contato:</h1>
+
+    <form action="enviar_contato.php" method="POST">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Preferências de Contato</legend>
+            <input type="checkbox" id="telefone" name="preferencias[]" value="telefone">
+            <label for="telefone"> Telefone</label><br>
+            
+            <input type="checkbox" id="email_pref" name="preferencias[]" value="email">
+            <label for="email_pref"> Email</label><br>
+            
+            <input type="checkbox" id="whatsapp" name="preferencias[]" value="whatsapp">
+            <label for="whatsapp"> WhatsApp</label><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Mensagem</legend>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Onde nos conheceu?</legend>
+            <input list="conheceu" id="como_conheceu" name="como_conheceu">
+            <datalist id="conheceu">
+                <option value="Google">
+                <option value="Redes Sociais">
+                <option value="Indicação de Amigo">
+                <option value="Outro">
+            </datalist>
+        </fieldset>
+    </br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <footer>    
+        <p> Nome: Erica Regnier<br> Data: 09/07/24</p>
+    </footer>
+</body>
+</html>

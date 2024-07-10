@@ -25,6 +25,8 @@ p {
     width: 850px;
     float: left;
     margin: 0 auto;
+    text-align: center;
+
 }
 
 #content {
@@ -55,3 +57,5 @@ footer {
     width: 100%;
     margin-top: 200px;
 }
+
+
